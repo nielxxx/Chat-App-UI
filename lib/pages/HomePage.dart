@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/widgets/ActiveChats.dart';
+import 'package:flutter_application_1/pages/widgets/RecentChats.dart';
 
 class HomePage extends StatelessWidget{
   @override
@@ -65,6 +66,7 @@ class HomePage extends StatelessWidget{
           ),
         ),
         ActiveChats(),
+        RecentChats(),
       ]),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
