@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
 
 class RecentChats extends StatelessWidget {
+  List<String> imagePaths = [
+    "images/earthman.jpg",
+    "images/gamer.jpg",
+    "images/hacker.jpg",
+    "images/man.jpg",
+    "images/greenman.jpg",
+    "images/meow.png",
+    "images/woman.png",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,7 +29,9 @@ class RecentChats extends StatelessWidget {
             offset: Offset(0, 2),
           ),
         ]),
-        child: Column(children: [
+        child: Column(
+          children: [
+             for (int i= 0; i < imagePaths.length; i++)
           Padding(padding: EdgeInsets.symmetric(vertical: 15),
             child: InkWell(
               onTap: () {},
@@ -29,7 +41,7 @@ class RecentChats extends StatelessWidget {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(35),
                     child: Image.asset(
-                      "images/man.jpg",
+                      imagePaths[i],
                       height: 65,
                       width: 65,
                     ),
@@ -40,14 +52,17 @@ class RecentChats extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Bestfriend 🤞", style: TextStyle(
+                          "Programmer 🤞", style: TextStyle(
                             fontSize: 18,
                             color:Color(0xFF113953),
                             fontWeight: FontWeight.bold,
                           )
                         ),
+                        SizedBox(
+                          height: 10,
+                        ),
                         Text(
-                          "Hello bro.. can i copy your code?",
+                          "Hello can you assist me? can I copy your code?",
                           style: TextStyle(
                             fontSize: 16,
                             color: Colors.black54,
@@ -56,6 +71,39 @@ class RecentChats extends StatelessWidget {
                       ],
                     ),
                   ),
+                  Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 10),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          "4:20",
+                          style: TextStyle(fontSize: 15, color: Colors.black54),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Container(
+                          height: 23,  
+                          width: 23, 
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            color: Color(0xFF113953),
+                            borderRadius: BorderRadius.circular(25),
+                          ),
+                          child: Text(
+                            "3", 
+                            style: TextStyle(
+                              color: Colors.white, 
+                              fontSize: 16, 
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
                 ],),
               ),
             ),
