@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 
 class RecentChats extends StatelessWidget {
@@ -34,7 +36,9 @@ class RecentChats extends StatelessWidget {
              for (int i= 0; i < imagePaths.length; i++)
           Padding(padding: EdgeInsets.symmetric(vertical: 15),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, "chatPage");
+              },
               child: Container(
                 height: 65,
                 child: Row(children: [

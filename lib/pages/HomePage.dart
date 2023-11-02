@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/widgets/ActiveChats.dart';
-import 'package:flutter_application_1/pages/widgets/RecentChats.dart';
+import 'package:flutter_application_1/widgets/ActiveChats.dart';
+import 'package:flutter_application_1/widgets/RecentChats.dart';
 
 class HomePage extends StatelessWidget{
   @override
