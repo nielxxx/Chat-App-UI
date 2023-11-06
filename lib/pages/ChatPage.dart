@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/widgets/ChatSample.dart';
 
 class ChatPage extends StatelessWidget{
   @override
@@ -56,6 +57,11 @@ class ChatPage extends StatelessWidget{
           ),
         ),
       ),
+      body: ListView(
+        padding: EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 80),
+        children: [
+          ChatSample(),
+        ],),
     );
   }
 }

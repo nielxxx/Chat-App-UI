@@ -66,7 +66,7 @@ class RecentChats extends StatelessWidget {
                           height: 10,
                         ),
                         Text(
-                          "Hello can you assist me? can I copy your code?",
+                          "Can you pog off? I'm stressed as F...",
                           style: TextStyle(
                             fontSize: 16,
                             color: Colors.black54,
@@ -97,7 +97,7 @@ class RecentChats extends StatelessWidget {
                             borderRadius: BorderRadius.circular(25),
                           ),
                           child: Text(
-                            "3", 
+                            "1", 
                             style: TextStyle(
                               color: Colors.white, 
                               fontSize: 16, 
