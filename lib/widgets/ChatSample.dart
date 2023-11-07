@@ -23,19 +23,22 @@ class ChatSample extends StatelessWidget{
             ),
           ),
         ),
-        Padding(
-          padding: EdgeInsets.only(top: 20, left: 80),
-          child: ClipPath(
-            clipper: LowerNipMessageClipper(MessageType.send),
-            child: Container(
-              padding: 
-                  EdgeInsets.only(left: 20, top: 10, bottom: 25, right: 20),
-              decoration: BoxDecoration(
-                color: Color(0xFF113953), 
+        Container(
+          alignment: Alignment.centerRight,
+          child: Padding(
+            padding: EdgeInsets.only(top: 20, left: 80),
+            child: ClipPath(
+              clipper: LowerNipMessageClipper(MessageType.send),
+              child: Container(
+                padding: 
+                    EdgeInsets.only(left: 20, top: 10, bottom: 25, right: 20),
+                decoration: BoxDecoration(
+                  color: Color(0xFF113953), 
+                  ),
+                child: Text(
+                  "Can you pog off? I'm stressed as F on this shttty project of yours",
+                  style: TextStyle(fontSize: 16, color: Colors.white),
                 ),
-              child: Text(
-                "Can you pog off? I'm stressed as F on this shttty project of yours",
-                style: TextStyle(fontSize: 16, color: Colors.white),
               ),
             ),
           ),

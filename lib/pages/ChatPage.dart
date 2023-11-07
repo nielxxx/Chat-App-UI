@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/widgets/ChatBottomSheet.dart';
 import 'package:flutter_application_1/widgets/ChatSample.dart';
 
 class ChatPage extends StatelessWidget{
@@ -37,6 +38,7 @@ class ChatPage extends StatelessWidget{
                 child: Icon(
                   Icons.call, 
                   color: Color(0xFF113953),
+                  size: 26,
                 ),
               ),
               Padding(
@@ -44,6 +46,7 @@ class ChatPage extends StatelessWidget{
                 child: Icon(
                   Icons.video_call, 
                   color: Color(0xFF113953),
+                  size: 30,
                 ),
               ),
                Padding(
@@ -61,7 +64,15 @@ class ChatPage extends StatelessWidget{
         padding: EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 80),
         children: [
           ChatSample(),
-        ],),
+          ChatSample(),
+          ChatSample(),
+          ChatSample(),
+          ChatSample(),
+          ChatSample(),
+          ChatSample(),
+        ],
+      ),
+      bottomSheet: ChatBottomSheet(),
     );
   }
 }
