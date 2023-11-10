@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 
 class RecentChats extends StatelessWidget {
   List<String> imagePaths = [
-    "images/earthman.jpg",
-    "images/gamer.jpg",
-    "images/hacker.jpg",
-    "images/man.jpg",
-    "images/greenman.jpg",
-    "images/meow.png",
-    "images/woman.png",
+    "assets/images/earthman.jpg",
+    "assets/images/gamer.jpg",
+    "assets/images/hacker.jpg",
+    "assets/images/man.jpg",
+    "assets/images/greenman.jpg",
+    "assets/images/meow.png",
+    "assets/images/woman.png",
   ];
 
   @override
